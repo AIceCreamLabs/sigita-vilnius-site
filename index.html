@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Psichologė psichoterapeutė Vilniuje | Sigita Ašvydienė</title>
-  <meta name="description" content="Psichologė psichoterapeutė Sigita Ašvydienė – individuali, grupinė ir porų psichoterapija Vilniuje, Gedimino pr. 27. Aukščiausia kvalifikacinė kategorija, Europos psichoterapijos sertifikatas.">
+  <meta name="description" content="Individuali, grupinė ir poros psichoterapija Vilniuje. Aukščiausios kvalifikacijos specialistė su Europos sertifikatu. Registruokitės konsultacijai.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <div class="nav-container">
       <a href="#home" class="nav-logo">Sigita Ašvydienė</a>
@@ -18,253 +17,173 @@
         <li><a href="#about">Apie mane</a></li>
         <li><a href="#services">Paslaugos</a></li>
         <li><a href="#prices">Kainos</a></li>
-        <li><a href="#contact">Kontaktai</a></li>
+        <li><a href="#contact" class="btn-nav">Registruotis</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <div class="hero">
+  <section class="hero" id="home">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="sea-loop.mp4" type="video/mp4">
+    </video>
     <div class="hero-content">
-      <h1>Psichologė psichoterapeutė Vilniuje</h1>
-      <p>Pagalba rasti daugiau ramybės, aiškumo ir autentiško ryšio su savimi</p>
-      <a href="#contact" class="btn btn-secondary">Registruotis konsultacijai</a>
+      <h1>Psichologė psichoterapeutė<br><span>Vilniuje</span></h1>
+      <p class="hero-lead">Pagalba rasti ramybę, aiškumą ir autentišką ryšį su savimi.<br>Dirbu su nerimu, santykiais, trauma ir gyvenimo iššūkiais.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-secondary btn-lg">Registruotis konsultacijai</a>
+        <a href="#services" class="btn btn-outline">Sužinoti daugiau</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="problems-solutions">
+    <div class="container">
+      <h2 class="section-title">Ar tai pažįstama?</h2>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <img src="anxiety.svg" alt="Nerimas" class="icon-img">
+          <h3>Nerimas ir stresas</h3>
+          <p>Panikos atakos, nuolatinis nerimas trukdo gyventi pilnavertį gyvenimą.</p>
+        </div>
+        <div class="problem-card">
+          <img src="relationship.svg" alt="Santykių krizės" class="icon-img">
+          <h3>Santykių krizės</h3>
+          <p>Bendraujate nesusikalbdami, jaučiatės vieni net būdami kartu.</p>
+        </div>
+        <div class="problem-card">
+          <img src="depressionn.svg" alt="Depresija" class="icon-img">
+          <h3>Depresija ir išsekimas</h3>
+          <p>Praradote energiją, motyvaciją, gyvenimas atrodo pilkas.</p>
+        </div>
+      </div>
+      <div class="cta-row" style="text-align: center; margin-top: var(--spacing-xl);">
+        <a href="#services" class="btn btn-secondary">Kaip galiu padėti</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services: Visual Cards -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Mano paslaugos</h2>
+      <p class="section-subtitle">Gilios transformacijos per psichodinaminę terapiją ir individualų palaikymą.</p>
+      <div class="service-grid">
+        <div class="service-card featured">
+          <img src="individual-therapy.svg" alt="Individuali" class="icon-img">
+          <h3>Individuali psichoterapija</h3>
+          <p>50 min. sesijos giliesiems pokyčiams. Dirbu su nerimu, trauma, saviverte.</p>
+          <ul class="service-features" id="features-individual">
+            <li>Psichodinaminiai metodai</li>
+            <li>Ilgalaikė parama</li>
+            <li>1:1 saugumas</li>
+            <li>Individualus tempas</li>
+            <li>Traumos sprendimas</li>
+            <li>Savivertės stiprinimas</li>
+          </ul>
+        <button class="service-features-toggle" onclick="toggleFeatures('features-individual')">
+          Daugiau detalių ▼
+          </button>
+
+          <a href="#contact" class="btn">Pradėti</a>
+        </div>
+        <div class="service-card">
+           <img src="couple-therapy.svg" alt="porų" class="icon-img">
+          <h3>Porų terapija</h3>
+          <p>Atkurkite ryšį, išmokite bendrauti ir spręsti konfliktus kartu.</p>
+          <a href="#contact" class="btn">Registruotis</a>
+        </div>
+        <div class="service-card">
+          <img src="group-therapy.svg" alt="grupinė" class="icon-img">
+          <h3>Grupinė terapija</h3>
+          <p>Mokykitės iš kitų, kurkite saugius ryšius grupės palaikyme (6-8 asm.).</p>
+          <a href="#contact" class="btn">Daugiau info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About: Trust Builders -->
+ <section id="about" class="about-section">
+  <div class="container grid-2">
+    <div class="about-text">
+      <h2 class="section-title">Apie mane</h2>
+      <p>Psichologė su <strong>aukščiausią kvalifikaciją</strong> ir <strong>Europos psichoterapijos sertifikatu (ECP)</strong>. 20+ metų patirtis dirbant su įvairiais gyvenimo iššūkiais Vilniuje.</p>
+      <div class="credentials-box">
+        <h3>Sertifikatai ir metodai</h3>
+        <ul>
+          <li>Psichodinaminė psichoterapija</li>
+          <li>Grupinė analizė</li>
+          <li>Geštaltinė terapija</li>
+        </ul>
+      </div>
+    </div>
+    <div class="about-visual">
+      <img src="sigita-headshot.jpg" alt="Sigita Ašvydienė" class="about-image">
+      <div class="qualifications">
+        <div class="qual-badge">
+          <span class="number">20+</span><span>Metų patirtis</span>
+        </div>
+        <div class="qual-badge">
+          <span class="number">1000+</span><span>Padedama žmonių</span>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Home Page -->
-    <div id="home" class="page-section active">
-      <section>
-        <h2>Kelias savęs link</h2>
-        <p>Gyvenimas nuolat kelia iššūkius. Kartais jautiesi nuobodu, nerimas apima arba sunkiai supranti savo jausmus ir poelgius. Šiuose momentuose psichoterapija gali būti pagalba – saugi erdvė savęs tyrinėjimui, gilesniam savęs supratimui ir pozityviems pokyčiams.</p>
-        <p>Dirbu su žmonėmis, kurie ieško gilesnio ryšio su savimi, nori suprasti savo sunkumus ir rasti iš jų išėjimo kelius.</p>
-      </section>
 
-      <section>
-        <h3>Su kokiais sunkumais dirbu</h3>
-        <ul>
-          <li>Nerimas, panikos atakos, nuolatinis didelis stresas</li>
-          <li>Depresyvi nuotaika, energijos stoka, beprasmybės jausmas</li>
-          <li>Santykių ir šeimos sunkumai, bendravimo iššūkiai</li>
-          <li>Savivertės, tapatumo, gyvenimo prasmės klausimai</li>
-          <li>Trauma, skausmingi prisiminimai ir iš jų kylantys jausmai</li>
-        </ul>
-      </section>
 
-      <section>
-        <h3>Teikiamos paslaugos</h3>
-        <div class="service-grid">
-          <div class="service-card">
-            <h3>Individuali psichoterapija</h3>
-            <p>Asmeninės konsultacijos, kuriose tyrinėjame Jūsų patirtį ir sunkumus.</p>
-            <a href="#services" class="btn">Sužinoti daugiau</a>
-          </div>
-          <div class="service-card">
-            <h3>Porų terapija</h3>
-            <p>Pagalba santykiams: supratimas, komunikacija, konfliktų sprendimas.</p>
-            <a href="#services" class="btn">Sužinoti daugiau</a>
-          </div>
-          <div class="service-card">
-            <h3>Grupinė terapija</h3>
-            <p>Terapija grupėje: mokymasis iš kitų, saugus augimas, žmogiškos jungties patirtis.</p>
-            <a href="#services" class="btn">Sužinoti daugiau</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="booking-section">
-        <h3>Pasiruošusi pradėti savo kelią?</h3>
-        <p>Registruokitės pirmajam susitikimui ar susisiekite telefonu.</p>
-        <div class="booking-button">
-          <a href="#contact" class="btn btn-secondary">Registruotis dabar</a>
-        </div>
-      </section>
+  <!-- CTA + Contact (Cristeta Final Push) -->
+<section id="contact" class="cta-section">
+  <div class="container">
+    <h2 class="section-title">Pasiruošusi pradėti?</h2>
+    <p class="hero-lead" style="max-width: 600px; margin: 0 auto var(--spacing-xl);">
+      Pirmoji konsultacija – Jūsų žingsnis į aiškesnį gyvenimą.
+    </p>
+    <div class="booking-embed">
+      <!-- Replace YOURGOOGLELINK with actual booking link -->
+      <iframe src="https://calendar.app.google/91vqiARiRkqa4wuy9" width="100%" height="600" 
+              style="border-radius: var(--radius-lg); border: none;"></iframe>
     </div>
-
-    <!-- About Page -->
-    <div id="about" class="page-section">
-      <section>
-        <h2>Apie psichologę psichoterapeutę Sigitą Ašvydienę</h2>
-        <p>Esu psichologė, turinti aukščiausią kvalifikacinę kategoriją ir Europos psichoterapijos sertifikatą. Darbą psichoterapijoje pradėjau prieš daugiau kaip 20 metų ir per tą laiką įgijau vertingą patirtį dirbdama su įvairiais klientais skirtinguose kontekstuose.</p>
-      </section>
-
-      <section>
-        <h3>Išsilavinimas ir kvalifikacija</h3>
-        <div class="credentials-box">
-          <h4>Profesinės kvalifikacijos</h4>
-          <ul>
-            <li><strong>Aukščiausia kvalifikacinė kategorija psichologijoje</strong></li>
-            <li><strong>Europos psichoterapijos sertifikatas (ECP)</strong></li>
-            <li>Psichodinaminė psichoterapija – mokymas ir praktika</li>
-            <li>Grupinė analizė – mokymas ir vedimas</li>
-            <li>Geštaltinė terapija – integracija į praktiką</li>
-          </ul>
-        </div>
-      </section>
-
-      <section>
-        <h3>Profesinė patirtis</h3>
-        <p>Daugiau nei du dešimtmečiai darbo su žmonėmis, kurie ieško pagalbos suprasti savo jausmus, santykius ir sunkumus. Vedžiau ir vedu individualias, porų ir grupines terapijas Vilniuje.</p>
-      </section>
-
-      <section>
-        <h3>Kaip dirbu</h3>
-        <p><strong>Darbo stilius:</strong> Mano darbą grindžia gili pagarba žmogiškajam patyrimui, saugumo kūrimas ir autentiško ryšio užmezgimas. Siekiu, kad konsultacija būtų saugi, konfidenciali ir žmogiška erdvė.</p>
-        <p><strong>Vertybės:</strong> Autentiškumas, atsakomybė, jautrumas ir skaidrumas lydi Jūsų terapinę kelionę.</p>
-      </section>
+    <div class="contact-quick">
+      <p><strong>Arba skambinkite:</strong></p>
+      <a href="tel:+37065936466" class="phone-link">+370 659 36466</a>
+      <a href="mailto:sigita.asv@gmail.com" class="phone-link">sigita.asv@gmail.com</a>
     </div>
+  </div>
+</section>
 
-    <!-- Services Page -->
-    <div id="services" class="page-section">
-      <section>
-        <h2>Paslaugos</h2>
-        <p>Teikiu tris pagrindinius paslaugų tipus, pritaikytus skirtingiems poreikiams.</p>
-      </section>
-
-      <section>
-        <h3>Individuali psichoterapija</h3>
-        <p><strong>Kam skirta:</strong> Asmeniniams sunkumams, kurie reikalauja gilesnės, dėmesingos pagalbos.</p>
-        <ul>
-          <li>Nerimas, panika, stresas</li>
-          <li>Depresyvi nuotaika ir energijos stoka</li>
-          <li>Santykių, šeimos ir darbo sunkumai</li>
-          <li>Tapatumo, savivertės ir prasmės paieškos</li>
-          <li>Trauma ir skausmingi prisiminimai</li>
-        </ul>
-        <p><strong>Kaip vyksta:</strong> Susitikimai paprastai trunka 50 minučių, dažnumas – kartą per savaitę. Terapija gali būti trumpalaikė arba ilgalaikė, priklausomai nuo Jūsų poreikių.</p>
-      </section>
-
-      <section>
-        <h3>Porų terapija</h3>
-        <p><strong>Kam skirta:</strong> Poroms, kurios nori geresnio supratimo, komunikacijos ir ryšio.</p>
-        <ul>
-          <li>Dažni konfliktai ir nesutarimai</li>
-          <li>Atitolimas, šaltumas ir sunkumai bendraujant</li>
-          <li>Pavydas, neištikimybė ir pasitikėjimo klausimai</li>
-          <li>Sprendimai dėl santykių ateities</li>
-        </ul>
-        <p><strong>Kaip vyksta:</strong> Abu partneriai dalyvauja susitikimuose. Kuriama saugi erdvė, kurioje galima išreikšti jausmus ir išgirsti vienas kitą.</p>
-      </section>
-
-      <section>
-        <h3>Grupinė psichoterapija</h3>
-        <p><strong>Kam skirta:</strong> Norintiems tyrinėti save santykiuose su kitais.</p>
-        <ul>
-          <li>Santykiams ir vienišumo jausmui</li>
-          <li>Savivertei ir savęs priėmimui</li>
-          <li>Jausmų raiškai su kitais</li>
-          <li>Jungties ir palaikymo iš grupės patyrimui</li>
-        </ul>
-        <p><strong>Kaip organizuojama:</strong> Grupę sudaro 6–8 asmenys. Darbui naudojama grupinė analizė ir geštaltiniai metodai.</p>
-      </section>
-    </div>
-
-    <!-- Prices Page -->
-    <div id="prices" class="page-section">
-      <section>
-        <h2>Kainos ir praktinė informacija</h2>
-      </section>
-
-      <section>
-        <h3>Psichoterapijos kainos</h3>
-        <p>Kainos nustatomos pagal susitarimą, atsižvelgiant į įprastą darbo krūvį ir Jūsų finansinę situaciją. Dėl konkretaus dydžio kreipkitės telefonu ar el. paštu.</p>
-        <ul>
-          <li><strong>Individuali psichoterapija:</strong> pagal susitarimą</li>
-          <li><strong>Porų terapija:</strong> pagal susitarimą</li>
-          <li><strong>Grupinė terapija:</strong> pagal susitarimą</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Atšaukimo taisyklės</h3>
-        <p>Jei norite atšaukti susitikimą, prašome pranešti mažiausiai prieš 48 valandas. Vėliau atšauktas susitikimas gali būti apmokestintas.</p>
-      </section>
-
-      <section>
-        <h3>Vieta ir atvykimas</h3>
-        <p><strong>Kabineto adresas:</strong> Gedimino pr. 27, Vilnius</p>
-        <p><strong>Kaip patekti:</strong> 3 aukštas, skambinkite durų varpelį su pavarde „AŠVYDIENĖ“.</p>
-        <p><strong>Parkavimas:</strong> Šalia kabineto – mokamas parkavimas arba viešasis transportas.</p>
-        <p><strong>Kalbos:</strong> Konsultuoju lietuvių, rusų ir anglų kalbomis.</p>
-      </section>
-    </div>
-
-    <!-- Contact Page -->
-    <div id="contact" class="page-section">
-      <section>
-        <h2>Kontaktai ir registracija</h2>
-        <p>Norite pradėti savo terapinę kelionę? Susisiekite su manimi tiesiogiai – kartu aptarsime, kaip galėčiau padėti.</p>
-      </section>
-
-      <section class="booking-section">
-        <h3>Registruokitės konsultacijai</h3>
-        <p>Pirmoji konsultacija – tai galimybė susipažinti, aptarti Jūsų sunkumus ir pajusti, ar turime gerą terapinį ryšį.</p>
-        <div class="booking-button">
-          <p class="booking-note">Registracijai skambinkite telefonu arba parašykite el. laišką.</p>
-        </div>
-      </section>
-
-      <!-- Inline embed example - paste in #contact section -->
-      <div class="booking-embed">
-        <iframe src="YOUR_GOOGLE_BOOKING_PAGE_URL?embed" width="100%" height="600" frameborder="0"></iframe>
-      </div>
-
-
-      <section>
-        <h3>Kontaktinė informacija</h3>
-        <div class="contact-info">
-          <div class="contact-item">
-            <h4>☎ Telefonas</h4>
-            <p><a href="tel:+37065936466">(0-659) 36466</a></p>
-          </div>
-          <div class="contact-item">
-            <h4>✉ El. paštas</h4>
-            <p><a href="mailto:sigita.asv@gmail.com">sigita.asv@gmail.com</a></p>
-          </div>
-          <div class="contact-item">
-            <h4>📍 Adresas</h4>
-            <p>Gedimino pr. 27, Vilnius</p>
-            <p style="font-size: 0.9rem; margin-top: 0.5rem;">3-as aukštas, skambinkite varpelį „AŠVYDIENĖ“</p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h3>Pirmosios sesijos informacija</h3>
-        <p>Jei norite užsirašyti pirmajam susitikimui, pasiruoškite:</p>
-        <ul>
-          <li>Vardą ir pavardę</li>
-          <li>Kontaktinį telefoną ir el. paštą</li>
-          <li>Trumpą aprašymą, dėl kokių sunkumų kreipiatės</li>
-          <li>Pageidaujamus susitikimo laikus</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Sekite Facebook’e</h3>
-        <p>Norėdami sužinoti naujienas ir įžvalgas, sekite mano Facebook profilį.</p>
-        <p><a href="https://facebook.com/" target="_blank" class="btn">Aplankykite Facebook’ą</a></p>
-      </section>
-    </div>
-  </main>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Sigita Ašvydienė. Visos teisės saugomos.</p>
-    <p>Psichologė psichoterapeutė | Vilnius</p>
-    <p style="font-size: 0.9rem; opacity: 0.9;">Confidential – Professional Care</p>
+    <div class="container">
+      <p>&copy; 2026 Sigita Ašvydienė. Visos teisės saugomos. | Gedimino pr. 27, Vilnius</p>
+    </div>
   </footer>
 
   <script>
-    // Simple mobile menu toggle
     const toggle = document.getElementById('mobileToggle');
     const navMenu = document.getElementById('navMenu');
-    toggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
+    toggle.addEventListener('click', () => navMenu.classList.toggle('active'));
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        navMenu.classList.remove('active');
+      });
     });
+
+    function toggleFeatures(id) {
+    const list = document.getElementById(id);
+    const button = list.nextElementSibling;
+  
+    list.classList.toggle('expanded');
+    button.textContent = list.classList.contains('expanded') 
+    ? 'Slėpti ▲' : 'Daugiau detalių ▼';
+}
+
   </script>
 </body>
 </html>
-
