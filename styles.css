@@ -34,7 +34,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Fixed Nav - Clean white glass */
+/*  Nav  */
 nav { 
   background: var(--color-glass);
   backdrop-filter: blur(20px);
@@ -65,6 +65,55 @@ nav {
 }
 .nav-menu a:hover::after { width: 100%; }
 .nav-menu a:hover { color: var(--color-primary); }
+
+/* Hide mobile toggle on desktop */
+.mobile-menu-toggle {
+  display: none !important;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: var(--color-primary);
+  padding: 0.5rem;
+}
+
+/* Mobile Menu Centered */
+@media (max-width: 1024px) {
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+  
+  .nav-menu {
+    position: fixed !important;
+    top: 0 !important; right: -100% !important;
+    width: 300px !important; height: 100vh !important;
+    flex-direction: column !important;
+    background: var(--color-glass) !important;
+    padding: 6rem var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) !important;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.2) !important;
+    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+  
+  .nav-menu.active {
+    right: 0 !important;
+  }
+  
+  .nav-menu a {
+    padding: var(--spacing-lg) !important;
+    width: 100% !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    text-align: center !important;
+    font-size: 1.1rem !important;
+  }
+  
+  .btn-nav {
+    margin-left: 0 !important;
+    margin-top: var(--spacing-md) !important;
+    width: 100% !important;
+  }
+}
 
 /* Perfect Hero Centering */
 .hero { 
