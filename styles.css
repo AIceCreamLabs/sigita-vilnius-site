@@ -148,11 +148,13 @@ nav {
   display: flex; justify-content: space-between; align-items: center;
 }
 .nav-logo { 
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-forest);
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 .nav-menu { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
 .nav-menu a { 
