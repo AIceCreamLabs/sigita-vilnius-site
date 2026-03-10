@@ -181,6 +181,7 @@ nav {
   justify-content: center;
   text-align: center;
   overflow: hidden;
+  background: linear-gradient(135deg, #1F3A33 0%, #2a4f45 100%);
 }
 .hero-video { 
   position: absolute;
@@ -409,6 +410,7 @@ section {
   height: 64px;
   display: block;
   margin: 0 auto 1rem;
+  object-fit: contain;
 }
 .service-card h3 {
   font-size: 1.4rem;
@@ -451,10 +453,11 @@ section {
 }
 .about-image {
   width: 100%;
-  max-width: 420px;
+  max-width: 350px;
   height: auto;
   border-radius: 20px;
   box-shadow: var(--shadow-lg);
+  object-fit: cover;
 }
 
 /* Philosophy / Principles */
