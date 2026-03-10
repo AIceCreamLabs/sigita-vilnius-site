@@ -686,6 +686,24 @@ section {
   margin: 0;
 }
 
+/* SEO Authority Section */
+.seo-authority {
+  padding: var(--spacing-xxl) 0;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+}
+.seo-authority p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seo-authority strong {
+  color: var(--color-forest);
+}
+
 /* Contact */
 .contact-section {
   padding: var(--spacing-xxl) 0;
@@ -696,6 +714,12 @@ section {
   color: var(--color-text-light);
   max-width: 500px;
   margin: 0 auto 2rem;
+}
+.contact-local {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.5rem;
+  font-style: italic;
 }
 .contact-links {
   display: flex;
