@@ -1,149 +1,278 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="lt-LT">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://sigita.lt">
-  <link rel="alternate" hreflang="lt" href="https://sigita.lt">
-  <link rel="alternate" hreflang="en" href="https://sigita.lt/en">
-  <link rel="alternate" hreflang="x-default" href="https://sigita.lt">
+  <link rel="canonical" href="https://sigitaasvydiene.lt">
+  <link rel="alternate" hreflang="lt" href="https://sigitaasvydiene.lt">
+  <link rel="alternate" hreflang="en" href="https://sigitaasvydiene.lt/en">
+  <link rel="alternate" hreflang="x-default" href="https://sigitaasvydiene.lt">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+
+  <title>Psichologė Vilniuje – Psichoterapija | Sigita Ašvydienė</title>
+  <meta name="description" content="Psichologė psichoterapeutė Sigita Ašvydienė – individuali ir porų psichoterapija Vilniuje. 20+ metų patirtis, Europos psichoterapijos sertifikatas. Saugi erdvė gilesniam savęs pažinimui.">
+  <meta property="og:title" content="Psichologė Vilniuje | Psichoterapija – Sigita Ašvydienė">
+  <meta property="og:description" content="Individuali ir porų psichoterapija Vilniuje. 20+ metų patirtis. Saugi erdvė gilesniam savęs pažinimui.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sigitaasvydiene.lt/hero-image.webp">
+  <meta property="og:url" content="https://sigitaasvydiene.lt">
   <meta name="geo.region" content="LT-VL">
   <meta name="geo.placename" content="Vilnius">
   <meta name="geo.position" content="54.6872;25.2797">
-  <link rel="icon" type="image/svg+xml" href="logo.svg">
-  <title>Psichologė Vilniuje – Individuali psichoterapija | Sigita Ašvydienė</title>
-  <meta name="description" content="Psichologė psichoterapeutė Sigita Ašvydienė – individuali ir porų psichoterapija Vilniuje. 20+ metų patirtis, Europos psichoterapijos sertifikatas.">
-  <meta property="og:title" content="Psichologė Vilniuje | Psichoterapija – Sigita Ašvydienė">
-  <meta property="og:description" content="Individuali ir porų psichoterapija Vilniuje. 20+ metų patirtis.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="hero-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" as="image" href="hero-image.webp" fetchpriority="high">
+  <link rel="preload" href="styles.css" as="style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
 </head>
 <body>
-  <!-- Scroll Progress Bar -->
-  <div class="scroll-progress"></div>
-  
-  <!-- Mobile Call Button -->
-  <a href="tel:+37065936466" class="mobile-call">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" role="progressbar" aria-label="Skaitymo progresas"></div>
+
+  <!-- Mobile Call -->
+  <a href="tel:+37065936466" class="mobile-call" aria-label="Skambinti dabar">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
   </a>
 
   <!-- Navigation -->
-  <nav>
+  <nav role="navigation" aria-label="Pagrindinė navigacija">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
-        <img src="logo.svg" alt="Sigita Ašvydienė - Psichologė Vilniuje" class="logo-img">
+        <img src="logo.svg" width="120" height="40" alt="Sigita Ašvydienė - Psichologė Vilniuje" class="logo-img">
         <span class="logo-text">Sigita Ašvydienė</span>
       </a>
-      <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home">Pradžia</a></li>
-        <li><a href="#services">Paslaugos</a></li>
-        <li><a href="#about">Apie mane</a></li>
-        <li><a href="#process">Procesas</a></li>
-        <li><a href="#contact">Kontaktai</a></li>
+      <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Atidaryti meniu" aria-expanded="false">
+        <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+          <line x1="6" y1="9" x2="22" y2="9"/>
+          <line x1="6" y1="14" x2="22" y2="14"/>
+          <line x1="6" y1="19" x2="22" y2="19"/>
+        </svg>
+      </button>
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#home" role="menuitem">Pradžia</a></li>
+        <li role="none"><a href="#services" role="menuitem">Paslaugos</a></li>
+        <li role="none"><a href="#about" role="menuitem">Apie mane</a></li>
+        <li role="none"><a href="#process" role="menuitem">Procesas</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Kontaktai</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero story-section" id="home">
-    <video autoplay muted loop playsinline class="hero-video" poster="sigita-headshot.jpg">
+  <!-- Full-screen Nav Overlay (mobile) -->
+  <div class="nav-overlay" id="navOverlay">
+    <button class="nav-overlay-close" id="navOverlayClose" aria-label="Uždaryti meniu">&times;</button>
+    <div>
+      <a href="#home" class="nav-overlay-link">Pradžia</a>
+      <a href="#services" class="nav-overlay-link">Paslaugos</a>
+      <a href="#about" class="nav-overlay-link">Apie mane</a>
+      <a href="#process" class="nav-overlay-link">Procesas</a>
+      <a href="#contact" class="nav-overlay-link">Kontaktai</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Sveiki atvykę">
+    <video muted loop playsinline class="hero-video" poster="hero-image.webp" preload="none" id="heroVideo" aria-hidden="true">
       <source src="sea-loop.mp4" type="video/mp4">
     </video>
-    <div class="hero-grain"></div>
     <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-light"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
     <div class="hero-content">
-      <h1>Ramybė prasideda nuo supratimo</h1>
-      <p class="hero-sub">Individuali ir porų psichoterapija Vilniuje. Saugi erdvė gilesniam savęs pažinimui.</p>
+      <span class="hero-badge">Psichologė psichoterapeutė Vilniuje</span>
+      <h1>
+        <span class="line"><span>Ramybė prasideda</span></span>
+        <span class="line"><span>nuo supratimo</span></span>
+      </h1>
+      <p class="hero-sub">Individuali ir porų psichoterapija Vilniuje. Saugi erdvė gilesniam savęs pažinimui ir ilgalaikiams pokyčiams.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-gold">Registruotis konsultacijai</a>
+        <a href="#contact" class="btn btn-gold magnetic">Registruotis konsultacijai</a>
+        <a href="#about" class="btn btn-outline-light magnetic">Sužinoti daugiau</a>
       </div>
     </div>
-    <div class="scroll-indicator">scroll</div>
+    <div class="scroll-indicator">
+      <span>Slinkite</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
-  <!-- Authority Strip -->
-  <section class="authority story-section">
+  <!-- AUTHORITY -->
+  <section class="authority" aria-label="Patirtis ir kvalifikacija">
     <div class="authority-grid">
-      <div>
-        <span class="stat">20+</span>
-        <p>Metų patirtis</p>
+      <div class="authority-item">
+        <span class="authority-stat" data-count="20">0</span>
+        <span class="authority-label">Metų patirtis</span>
       </div>
-      <div>
-        <span class="stat">ECP</span>
-        <p>Europos sertifikatas</p>
+      <div class="authority-item">
+        <span class="authority-stat">ECP</span>
+        <span class="authority-label">Europos sertifikatas</span>
       </div>
-      <div>
-        <span class="stat">A+</span>
-        <p>Kvalifikacinė kategorija</p>
+      <div class="authority-item">
+        <span class="authority-stat">A+</span>
+        <span class="authority-label">Kvalifikacinė kategorija</span>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="services-section story-section">
+  <!-- SERVICES -->
+  <section id="services" class="services-section" aria-label="Paslaugos">
     <div class="container">
-      <h2 class="section-title">Paslaugos</h2>
+      <span class="section-label">Paslaugos</span>
+      <h2 class="section-title">Kaip galiu padėti</h2>
+      <p class="section-intro">Kiekviena kelionė prasideda nuo pirmo žingsnio. Siūlau saugią erdvę, kurioje galite tyrinėti save ir rasti vidinę pusiausvyrą.</p>
       <div class="service-grid">
         <div class="service-card">
-          <img src="individual-therapy.svg" alt="Individuali psichoterapija Vilniuje" class="service-icon">
+          <img src="individual-therapy.svg" width="56" height="56" alt="" class="service-icon" loading="lazy" aria-hidden="true">
           <h3>Individuali psichoterapija</h3>
-          <p>50 min. sesijos giliems ir stabiliems pokyčiams. Dirbama su nerimu, santykiais ir saviverte.</p>
-          <a href="#contact" class="btn-link">Registruotis</a>
+          <p>50 min. sesijos giliems ir stabiliems pokyčiams. Dirbama su nerimu, santykiais, saviverte ir emociniais išgyvenimais.</p>
+          <a href="#contact" class="btn-text">Registruotis</a>
         </div>
         <div class="service-card">
-          <img src="couple-therapy.svg" alt="Porų terapija Santykių krizės Vilniuje" class="service-icon">
+          <img src="couple-therapy.svg" width="56" height="56" alt="" class="service-icon" loading="lazy" aria-hidden="true">
           <h3>Santykių krizės</h3>
-          <p>Bendraujate nesusikalbėdami, jaučiatės vieniši net ir būdami kartu.</p>
-          <a href="#contact" class="btn-link">Registruotis</a>
+          <p>Bendraujate nesusikalbėdami, jaučiatės vieniši net ir būdami kartu. Padedu atkurti ryšį ir supratimą poroje.</p>
+          <a href="#contact" class="btn-text">Registruotis</a>
         </div>
         <div class="service-card">
-          <img src="group-therapy.svg" alt="Grupinė terapija Vilniuje" class="service-icon">
+          <img src="group-therapy.svg" width="56" height="56" alt="" class="service-icon" loading="lazy" aria-hidden="true">
           <h3>Grupinė terapija</h3>
-          <p>Unikali galimybė pažinti save ir mokytis kurti saugius ryšius analitinės grupės pagalba (5–9 asm.).</p>
-          <a href="#contact" class="btn-link">Registruotis</a>
+          <p>Unikali galimybė pažinti save ir mokytis kurti saugius ryšius analitinės grupės pagalba (5–9 asmenys).</p>
+          <a href="#contact" class="btn-text">Registruotis</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="about-section story-section">
-    <div class="container grid-2">
-      <div class="about-text">
-        <h2 class="section-title">Apie psichologę psichoterapeutę</h2>
-        <p>
-          Psichologė psichoterapeutė, turinti aukščiausią kvalifikacinę kategoriją ir
-          Europos psichoterapijos sertifikatą (ECP).
-          Daugiau nei 20 metų dirbu psichoterapijos srityje ir padėjau daugiau nei
-          1000 žmonių geriau suprasti save, savo emocijas ir santykius.
-        </p>
-        <div class="credentials-mini">
-          <span>Aukščiausia kvalifikacinė kategorija</span>
-          <span>Europos psichoterapijos sertifikatas (ECP)</span>
-          <span>20+ metų patirtis padedant 1000+ žmonių</span>
-        </div>
-      </div>
-      <div class="about-visual">
-        <img src="sigita-headshot.jpg" alt="Psichologė psichoterapeutė Sigita Ašvydienė Vilniuje" class="about-image">
-      </div>
-    </div>
-  </section>
-
-  <!-- Philosophy / Therapy Principles -->
-  <section class="philosophy-section story-section">
+  <!-- ABOUT -->
+  <section id="about" class="about-section" aria-label="Apie psichologę">
     <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content">
+          <span class="section-label">Apie mane</span>
+          <h2 class="section-title section-title--left">Psichologė psichoterapeutė,<br>jau 20+ metų Vilniuje</h2>
+          <div class="divider divider--left"></div>
+          <p>Esu psichologė psichoterapeutė, turinti aukščiausią kvalifikacinę kategoriją ir Europos psichoterapijos sertifikatą (ECP). Daugiau nei 20 metų dirbu psichoterapijos srityje ir padėjau daugiau nei 1000 žmonių geriau suprasti save, savo emocijas ir santykius.</p>
+          <p>Tikiu, kad kiekvienas žmogus turi vidinių resursų pokyčiams – kartais tereikia saugios erdvės ir profesionalaus palydėjimo, kad juos atrastų.</p>
+          <div class="about-credentials">
+            <span class="credential-tag">Aukščiausia kvalifikacinė kategorija</span>
+            <span class="credential-tag">Europos psichoterapijos sertifikatas (ECP)</span>
+            <span class="credential-tag">1000+ padėtų žmonių</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-image-wrapper">
+            <img src="sigita-headshot.webp" width="420" height="520" alt="Psichologė psichoterapeutė Sigita Ašvydienė" class="about-image" loading="lazy" decoding="async">
+          </div>
+          <div class="about-frame" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" aria-label="Atsiliepimai">
+    <div class="container">
+      <span class="section-label" style="color: var(--color-gold); text-align: center; display: block;">Atsiliepimai</span>
+      <h2 class="section-title">Ką sako klientai</h2>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <p class="testimonial-text">„Pagaliau radau erdvę, kur galiu kalbėti apie viską be baimės būti teisiama. Po kelių mėnesių terapijos jaučiuosi lyg atgimusi.“</p>
+          <div class="testimonial-author">— Laura</div>
+          <div class="testimonial-role">Individuali terapija</div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">„Sigita padėjo mums išgyventi sunkiausią santykių krizę. Dabar vėl mokomės kalbėtis ir klausytis vienas kito.“</p>
+          <div class="testimonial-author">— Tomas ir Rūta</div>
+          <div class="testimonial-role">Porų terapija</div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">„Grupinė terapija buvo viena vertingiausių patirčių. Išmokau priimti save per kitų žmonių istorijas.“</p>
+          <div class="testimonial-author">— Karolina</div>
+          <div class="testimonial-role">Grupinė terapija</div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">„Po metų terapijos pagaliau jaučiu, kad kontroliuoju savo gyvenimą, o ne nerimas kontroliuoja mane.“</p>
+          <div class="testimonial-author">— Dovydas</div>
+          <div class="testimonial-role">Individuali terapija</div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">„Sugrįžau į terapiją po pertraukos ir kiekvieną kartą jaučiu, kad čia yra vienintelė vieta, kur galiu būti visiškai savimi.“</p>
+          <div class="testimonial-author">— Monika</div>
+          <div class="testimonial-role">Individuali terapija</div>
+        </div>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- WHEN TO SEEK HELP -->
+  <section class="when-section" aria-label="Kada kreiptis pagalbos">
+    <div class="container">
+      <span class="section-label">Ženklai</span>
+      <h2 class="section-title">Kada verta kreiptis<br>į psichologą?</h2>
+      <p class="section-intro">Dažnai žmonės delsia kreiptis į specialistą, manydami, kad problemas reikia spręsti patiems. Šie ženklai gali rodyti, kad atėjo laikas pasikalbėti.</p>
+      <div class="when-grid">
+        <div class="when-item">
+          <img src="anxiety.svg" width="44" height="44" alt="" class="when-icon" loading="lazy" aria-hidden="true">
+          <div class="when-content">
+            <h3>Nerimas ir panika</h3>
+            <p>Nuolatinis nerimas, panikos atakos, sunkumai suvaldant emocijas.</p>
+          </div>
+        </div>
+        <div class="when-item">
+          <img src="depressions.svg" width="44" height="44" alt="" class="when-icon" loading="lazy" aria-hidden="true">
+          <div class="when-content">
+            <h3>Depresija ir prasta nuotaika</h3>
+            <p>Ilgalaikis liūdesys, energijos stoka, pomėgių praradimas.</p>
+          </div>
+        </div>
+        <div class="when-item">
+          <img src="relationship.svg" width="44" height="44" alt="" class="when-icon" loading="lazy" aria-hidden="true">
+          <div class="when-content">
+            <h3>Santykių sunkumai</h3>
+            <p>Problemos šeimoje, poroje ar darbe, sunkumai bendraujant.</p>
+          </div>
+        </div>
+        <div class="when-item">
+          <img src="stress-and-anxiety.svg" width="44" height="44" alt="" class="when-icon" loading="lazy" aria-hidden="true">
+          <div class="when-content">
+            <h3>Gyvenimo krizės</h3>
+            <p>Skyrybos, netektis, darbo praradimas ar kiti reikšmingi pokyčiai.</p>
+          </div>
+        </div>
+        <div class="when-item">
+          <img src="handshake.svg" width="44" height="44" alt="" class="when-icon" loading="lazy" aria-hidden="true">
+          <div class="when-content">
+            <h3>Pasikartojančios problemos</h3>
+            <p>Jei tos pačios situacijos kartojasi jūsų gyvenime.</p>
+          </div>
+        </div>
+        <div class="when-item">
+          <img src="individual-therapy.svg" width="44" height="44" alt="" class="when-icon" loading="lazy" aria-hidden="true">
+          <div class="when-content">
+            <h3>Asmeninis augimas</h3>
+            <p>Noras geriau suprasti save, savo elgesį ir emocijas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="philosophy-section" aria-label="Terapijos principai">
+    <div class="container">
+      <span class="section-label">Požiūris</span>
       <h2 class="section-title">Terapijos principai</h2>
-      <p class="philosophy-intro">Psichoterapija – tai saugi ir konfidenciali erdvė, kurioje galima giliau suprasti save, savo emocijas ir santykius su kitais. Terapijos metu svarbiausia yra atidus klausymasis, pagarba kiekvieno žmogaus patirčiai ir bendras kelias link didesnio vidinio aiškumo.</p>
-      <p class="philosophy-intro">Vilniuje dirbu daugiau nei 20 metų, padedu žmonėms susidoroti su nerimu, santykių sunkumais, emociniais išgyvenimais ir gyvenimo krizėmis.</p>
-      
-      <div class="divider"></div>
-      
+      <p class="philosophy-intro">Psichoterapija – tai saugi ir konfidenciali erdvė, kurioje galite giliau suprasti save, savo emocijas ir santykius su kitais. Dirbu Vilniuje daugiau nei 20 metų, padedu žmonėms susidoroti su nerimu, santykių sunkumais ir gyvenimo krizėmis.</p>
       <div class="principles-grid">
         <div class="principle-card">
           <h3>Gilus supratimas</h3>
@@ -155,324 +284,220 @@
         </div>
         <div class="principle-card">
           <h3>Individualus procesas</h3>
-          <p>Kiekvieno žmogaus situacija yra unikali, todėl terapijos procesas pritaikomas individualiai.</p>
+          <p>Kiekvieno žmogaus situacija yra unikali, todėl terapijos procesas pritaikomas individualiems poreikiams.</p>
         </div>
         <div class="principle-card">
           <h3>Pokytis per supratimą</h3>
-          <p>Ilgalaikiai pokyčiai atsiranda per gilesnį savęs supratimą ir naujų būdų atradimą.</p>
+          <p>Ilgalaikiai pokyčiai atsiranda per gilesnį savęs supratimą ir naujų įveikos būdų atradimą.</p>
         </div>
       </div>
-      
       <p class="principle-cta">Jeigu ieškote psichologės ar psichoterapeutės Vilniuje, kviečiu susisiekti ir susitarti dėl pirmos konsultacijos.</p>
     </div>
   </section>
 
-  <!-- When to Contact a Psychologist -->
-  <section class="when-to-contact story-section">
-    <div class="container">
-      <h2 class="section-title">Kada verta kreiptis į psichologą?</h2>
-      <p class="when-to-contact-intro">Dažnai žmonės delsia kreiptis į specialistą, manydami, kad problemas reikia spręsti patiems. Tačiau yra situacijų, kada profesionalo pagalba gali būti ypač naudinga:</p>
-      
-      <div class="when-to-contact-list">
-        <div class="when-item">
-          <img src="anxiety.svg" alt="Nerimas ir panika psichoterapija" class="when-icon">
-          <div>
-            <h3>Nerimas ir panika</h3>
-            <p>Nuolatinis nerimas, panikos atakos, sunkumai suvaldant emocijas.</p>
+  <!-- PROCESS (Horizonal Pin-scroll) -->
+  <section id="process" class="process-section" aria-label="Kaip vyksta terapija">
+    <div class="process-pin-container">
+      <div class="process-pin-content">
+        <div class="container" style="position: relative; z-index: 2;">
+          <span class="section-label" style="color: var(--color-gold); text-align: center; display: block;">Kelionė</span>
+          <h2 class="section-title">Kaip vyksta psichoterapija?</h2>
+        </div>
+        <div class="process-progress" aria-hidden="true">
+          <div class="process-progress-fill" id="processProgressFill"></div>
+        </div>
+        <div class="process-steps-wrapper" id="processStepsWrapper">
+          <div class="process-step-pin">
+            <span class="process-number-pin">1</span>
+            <h3>Susisiekimas</h3>
+            <p>Paskambinkite arba parašykite. Trumpai apibūdinkite savo situaciją.</p>
+          </div>
+          <div class="process-step-pin">
+            <span class="process-number-pin">2</span>
+            <h3>Pirmoji konsultacija</h3>
+            <p>Susitinkame (50 min.), išsamiai aptariame jūsų lūkesčius ir poreikius.</p>
+          </div>
+          <div class="process-step-pin">
+            <span class="process-number-pin">3</span>
+            <h3>Terapijos pradžia</h3>
+            <p>Susitariame dėl reguliarių susitikimų laiko ir dažnumo.</p>
+          </div>
+          <div class="process-step-pin">
+            <span class="process-number-pin">4</span>
+            <h3>Terapijos eiga</h3>
+            <p>Kartu tyrinėsime jūsų emocijas, patirtis, santykius ir vidinius resursus.</p>
           </div>
         </div>
-        <div class="when-item">
-          <img src="depressions.svg" alt="Depresija ir prasta nuotaika" class="when-icon">
-          <div>
-            <h3>Depresija ir prasta nuotaika</h3>
-            <p>Ilgalaikė liūdesys, energijos stoka, pomėgių praradimas.</p>
+        <div class="container" style="position: relative; z-index: 2;">
+          <div class="process-info">
+            <h3>Praktinė informacija</h3>
+            <ul>
+              <li><strong>Vieta:</strong> Gedimino pr. 27, Vilnius (3 aukštas)</li>
+              <li><strong>Sesijos trukmė:</strong> 50 minučių</li>
+              <li><strong>Dažnumas:</strong> Paprastai kartą per savaitę</li>
+              <li><strong>Kalbos:</strong> Lietuvių, anglų</li>
+            </ul>
           </div>
         </div>
-        <div class="when-item">
-          <img src="relationship.svg" alt="Santykių sunkumai psichologas" class="when-icon">
-          <div>
-            <h3>Santykių sunkumai</h3>
-            <p>Problemos šeimoje, poroje ar darbe, sunkumai bendraujant.</p>
-          </div>
-        </div>
-        <div class="when-item">
-          <img src="stress-and-anxiety.svg" alt="Gyvenimo krizės stresas" class="when-icon">
-          <div>
-            <h3>Gyvenimo krizės</h3>
-            <p>Skyrydos, netektis, darbo praradimas ar kiti reikšmingi pokyčiai.</p>
-          </div>
-        </div>
-        <div class="when-item">
-          <img src="handshake.svg" alt="Psichologo konsultacija sprendimas" class="when-icon">
-          <div>
-            <h3>Pasikartojančios problemos</h3>
-            <p>Jei tos pačios problemos kartojasi gyvenime.</p>
-          </div>
-        </div>
-        <div class="when-item">
-          <img src="individual-therapy.svg" alt="Asmeninis augimas psichoterapija" class="when-icon">
-          <div>
-            <h3>Asmeninis augimas</h3>
-            <p>Norėjimas geriau suprasti save, savo elgesį ir emocijas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How Therapy Works -->
-  <section id="process" class="how-therapy-works story-section">
-    <div class="container">
-      <h2 class="section-title">Psichoterapija Vilniuje – kaip vyksta konsultacijos?</h2>
-      <p class="how-therapy-intro">Pirmoji konsultacija yra svarbus žingsnis pradedant terapinį kelią. Per ją susipažįstame, aptariame Jūsų situaciją ir nusprendžiame, ar galime dirbti kartu.</p>
-      
-      <div class="how-therapy-grid">
-        <div class="how-therapy-step">
-          <span class="how-number">1</span>
-          <h3>Susisiekimas</h3>
-          <p>Susisiekite telefonu ar el. paštu ir trumpai aprašykite savo situaciją.</p>
-        </div>
-        <div class="how-therapy-step">
-          <span class="how-number">2</span>
-          <h3>Pirmoji konsultacija</h3>
-          <p>Pirmojo susitikimo metu (50 minučių) aptariame Jūsų situaciją.</p>
-        </div>
-        <div class="how-therapy-step">
-          <span class="how-number">3</span>
-          <h3>Terapijos pradžia</h3>
-          <p>Susitariame dėl reguliaraus susitikimų laiko.</p>
-        </div>
-        <div class="how-therapy-step">
-          <span class="how-number">4</span>
-          <h3>Terapijos eiga</h3>
-          <p>Reguliariai tyrinėsime Jūsų emocijas, patirtis ir santykius.</p>
-        </div>
-      </div>
-      
-      <div class="how-therapy-info">
-        <h3>Praktinė informacija</h3>
-        <ul>
-          <li><strong>Vieta:</strong> Gedimino pr. 27, Vilnius (3 aukštas)</li>
-          <li><strong>Sesijos trukmė:</strong> 50 minučių</li>
-          <li><strong>Dažnumas:</strong> Paprastai kartą per savaitę</li>
-          <li><strong>Kalbos:</strong> Lietuvių, Anglų</li>
-        </ul>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq-section story-section">
+  <section class="faq-section" aria-label="Dažniausiai užduodami klausimai" itemscope="" itemtype="https://schema.org/FAQPage">
     <div class="container">
+      <span class="section-label">Atsakymai</span>
       <h2 class="section-title">Dažniausiai užduodami klausimai</h2>
-      <div class="faq-item">
-        <button class="faq-toggle">
-          <h3>Kas yra psichoterapija?</h3>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-content">
-          <p>Psichoterapija – tai pokalbio forma, kurioje specialistas padeda žmogui suprasti save, savo emocijas ir santykius su kitais. Tai saugi ir konfidenciali erdvė, kurioje galima tyrinėti save ir ieškoti sprendimų gyvenimo sunkumams.</p>
+      <div class="faq-list">
+        <div class="faq-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-toggle" aria-expanded="false">
+            <span itemprop="name">Kas yra psichoterapija?</span>
+            <span class="faq-icon-wrap"><span class="faq-icon">+</span></span>
+          </button>
+          <div class="faq-content" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-content-inner" itemprop="text">
+              <p>Psichoterapija – tai pokalbio forma, kurioje specialistas padeda žmogui suprasti save, savo emocijas ir santykius su kitais. Tai saugi ir konfidenciali erdvė, kurioje galite tyrinėti save ir ieškoti sprendimų gyvenimo sunkumams.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-toggle">
-          <h3>Kuo skiriasi psichologas ir psichoterapeutas?</h3>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-content">
-          <p>Psichologas turi psichologijos išsilavinimą ir dirba su įvairiomis psichologinėmis problemomis. Psichoterapeutas papildomai turi specialų ilgalaikį mokymą psichoterapijos srityje ir dirba naudojant specifinius terapinius metodus.</p>
+        <div class="faq-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-toggle" aria-expanded="false">
+            <span itemprop="name">Kuo skiriasi psichologas ir psichoterapeutas?</span>
+            <span class="faq-icon-wrap"><span class="faq-icon">+</span></span>
+          </button>
+          <div class="faq-content" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-content-inner" itemprop="text">
+              <p>Psichologas turi psichologijos išsilavinimą ir dirba su įvairiomis psichologinėmis problemomis. Psichoterapeutas papildomai turi specialų ilgalaikį mokymą psichoterapijos srityje ir dirba naudojant specifinius terapinius metodus.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-toggle">
-          <h3>Kiek trunka terapija?</h3>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-content">
-          <p>Terapijos trukmė priklauso nuo individualių poreikių. Vienas susitikimas trunka 50 minučių. Tai gali būti trumpalaikė arba ilgalaikė terapija.</p>
+        <div class="faq-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-toggle" aria-expanded="false">
+            <span itemprop="name">Kiek trunka terapija?</span>
+            <span class="faq-icon-wrap"><span class="faq-icon">+</span></span>
+          </button>
+          <div class="faq-content" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-content-inner" itemprop="text">
+              <p>Terapijos trukmė priklauso nuo individualių poreikių. Vienas susitikimas trunka 50 minučių. Tai gali būti tiek trumpalaikė (kelios konsultacijos), tiek ilgalaikė terapija.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-toggle">
-          <h3>Ar terapija konfidenciali?</h3>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-content">
-          <p>Visos konsultacijos yra visiškai konfidencialios. Jūsų asmeninė informacija niekada nėra atskleidžiama trečiosioms šalims.</p>
+        <div class="faq-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-toggle" aria-expanded="false">
+            <span itemprop="name">Ar terapija konfidenciali?</span>
+            <span class="faq-icon-wrap"><span class="faq-icon">+</span></span>
+          </button>
+          <div class="faq-content" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-content-inner" itemprop="text">
+              <p>Taip, visos konsultacijos yra visiškai konfidencialios. Jūsų asmeninė informacija niekada nėra atskleidžiama trečiosioms šalims.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-toggle">
-          <h3>Kiek kainuoja psichoterapija Vilniuje?</h3>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-content">
-          <p>Kainos nustatomos pagal susitarimą, atsižvelgiant į Jūsų finansinę situaciją. Dėl konkretaus dydžio kreipkitės telefonu ar el. paštu.</p>
+        <div class="faq-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-toggle" aria-expanded="false">
+            <span itemprop="name">Kiek kainuoja psichoterapija Vilniuje?</span>
+            <span class="faq-icon-wrap"><span class="faq-icon">+</span></span>
+          </button>
+          <div class="faq-content" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-content-inner" itemprop="text">
+              <p>Kaina nustatoma individualiai, atsižvelgiant į jūsų situaciją. Dėl konkretaus dydžio kviečiame susisiekti telefonu ar el. paštu.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-toggle">
-          <h3>Ar psichoterapija padeda nuo nerimo?</h3>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-content">
-          <p>Taip, psichoterapija yra vienas efektyviausių nerimo gydymo būdų. Tyrimai rodo, kad reguliari psichoterapija žymiai sumažina nerimo simptomus.</p>
+        <div class="faq-item" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+          <button class="faq-toggle" aria-expanded="false">
+            <span itemprop="name">Ar psichoterapija padeda nuo nerimo?</span>
+            <span class="faq-icon-wrap"><span class="faq-icon">+</span></span>
+          </button>
+          <div class="faq-content" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+            <div class="faq-content-inner" itemprop="text">
+              <p>Taip, psichoterapija yra vienas efektyviausių nerimo gydymo būdų. Tyrimai rodo, kad reguliari psichoterapija žymiai sumažina nerimo simptomus ir padeda išsiugdyti ilgalaikius įveikos įgūdžius.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SEO Authority Section -->
-  <section class="seo-authority story-section">
+  <!-- SEO TEXT -->
+  <section class="seo-section" aria-label="Psichologė Vilniuje">
     <div class="container">
-      <h2 class="section-title">Psichologė Vilniuje – psichoterapija ir emocinė pagalba</h2>
-      <p>
-        Jeigu ieškote <strong>psichologės Vilniuje</strong>, svarbu rasti specialistą,
-        su kuriuo galėtumėte jaustis saugiai ir atvirai kalbėti apie savo patirtį.
-        Psichoterapija padeda geriau suprasti emocijas, santykius ir gyvenimo
-        sunkumus.
-      </p>
-      <p>
-        Mano kabinete <strong>Vilniuje</strong> vyksta individuali psichoterapija,
-        porų konsultacijos ir grupinė terapija. Per daugiau nei 20 metų praktikos
-        padėjau daugeliui žmonių geriau suprasti save ir rasti naujų būdų spręsti
-        gyvenimo iššūkius.
-      </p>
-      <p>
-        Jeigu svarstote apie <strong>psichoterapiją Vilniuje</strong>,
-        kviečiu susisiekti ir susitarti dėl pirmos konsultacijos.
-      </p>
+      <div class="seo-text">
+        <h2 class="section-title">Psichologė Vilniuje – psichoterapija ir emocinė pagalba</h2>
+        <p>Jeigu ieškote <strong>psichologės Vilniuje</strong>, svarbu rasti specialistą, su kuriuo galėtumėte jaustis saugiai ir atvirai kalbėti apie savo patirtį. Psichoterapija padeda geriau suprasti emocijas, santykius ir gyvenimo sunkumus.</p>
+        <p>Mano kabinete <strong>Vilniuje</strong> vyksta individuali psichoterapija, porų konsultacijos ir grupinė terapija. Per daugiau nei 20 metų praktikos padėjau daugeliui žmonių geriau suprasti save ir rasti naujų būdų spręsti gyvenimo iššūkius.</p>
+        <p>Jeigu svarstote apie <strong>psichoterapiją Vilniuje</strong>, kviečiu susisiekti ir susitarti dėl pirmos konsultacijos.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact-section story-section">
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section" aria-label="Kontaktai">
     <div class="container">
+      <span class="section-label">Kontaktai</span>
       <h2 class="section-title">Registracija konsultacijai</h2>
       <p class="contact-intro">Susisiekite telefonu arba el. paštu. Atsakau per 24 valandas.</p>
-      <div class="contact-links">
-        <a href="tel:+37065936466" class="contact-phone">+370 659 36466</a>
+      <div class="contact-grid">
+        <a href="tel:+37065936466" class="contact-phone magnetic">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          +370 659 36466
+        </a>
         <a href="mailto:sigita.asv@gmail.com" class="contact-email">sigita.asv@gmail.com</a>
       </div>
       <p class="contact-address">Gedimino pr. 27, Vilnius (3 aukštas)</p>
-      <p class="contact-local">Psichologo kabinetas Vilniaus centre – Gedimino pr. 27.</p>
-      <a href="tel:+37065936466" class="btn btn-gold">Skambinti dabar</a>
+      <p class="contact-note">Psichologo kabinetas Vilniaus centre – patogus susisiekimas iš bet kurios miesto dalies.</p>
+      <a href="tel:+37065936466" class="btn btn-gold magnetic">Skambinti dabar</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <!-- FOOTER -->
+  <footer role="contentinfo">
     <div class="container">
-      <div class="footer-logo">
-        <img src="logo.svg" alt="Sigita Ašvydienė" class="footer-logo-img">
+      <div class="footer-brand">
+        <img src="logo.svg" width="100" height="35" alt="Sigita Ašvydienė" class="footer-logo-img" loading="lazy">
       </div>
-      <nav class="footer-nav">
-        <a href="#services" title="Psichoterapija Vilniuje">Psichoterapija Vilniuje</a>
-        <a href="#about" title="Psichologė Vilniuje">Psichologė Vilniuje</a>
-        <a href="#contact" title="Porų terapija Vilniuje">Porų terapija Vilniuje</a>
-        <a href="#contact" title="Psichologė Vilniuje konsultacija">Psichologė Vilniuje konsultacija</a>
+      <nav class="footer-nav" aria-label="Apatinė navigacija">
+        <a href="#services">Psichoterapija Vilniuje</a>
+        <a href="#about">Psichologė Vilniuje</a>
+        <a href="#contact">Porų terapija Vilniuje</a>
       </nav>
-      <p>2026 Sigita Ašvydienė. Visos teisės saugomos.</p>
-      <p>Gedimino pr. 27, Vilnius, Lietuva</p>
+      <div class="footer-divider" aria-hidden="true"></div>
+      <div class="footer-meta">
+        <p>&copy; 2026 Sigita Ašvydienė. Visos teisės saugomos.</p>
+        <p>Gedimino pr. 27, Vilnius, Lietuva</p>
+      </div>
     </div>
   </footer>
 
+  <!-- Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Psychologist",
+    "@type": ["Psychologist", "LocalBusiness"],
     "name": "Sigita Ašvydienė",
+    "image": "https://sigitaasvydiene.lt/sigita-headshot.webp",
+    "url": "https://sigitaasvydiene.lt",
+    "telephone": "+37065936466",
+    "email": "sigita.asv@gmail.com",
+    "areaServed": "Vilnius",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Gedimino pr. 27",
       "addressLocality": "Vilnius",
       "addressCountry": "LT"
     },
-    "telephone": "+37065936466",
-    "email": "sigita.asv@gmail.com"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 54.6872,
+      "longitude": 25.2797
+    },
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "€"
   }
   </script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Sigita Ašvydienė",
-    "url": "https://sigita.lt",
-    "logo": "https://sigita.lt/sigita-headshot.jpg"
-  }
-  </script>
-
-  <script>
-    // Mobile menu toggle
-    const toggle = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
-    toggle.addEventListener('click', () => navMenu.classList.toggle('active'));
-    
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', e => {
-        e.preventDefault();
-        document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-        navMenu.classList.remove('active');
-      });
-    });
-
-    // FAQ Toggle
-    document.querySelectorAll('.faq-toggle').forEach(button => {
-      button.addEventListener('click', () => {
-        const faqItem = button.parentElement;
-        faqItem.classList.toggle('active');
-        const icon = button.querySelector('.faq-icon');
-        icon.textContent = faqItem.classList.contains('active') ? '−' : '+';
-      });
-    });
-
-    // Luxury 3D Tilt Cards
-    document.querySelectorAll('.service-card, .when-item, .principle-card').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const rotateX = (y / rect.height - 0.5) * 8;
-        const rotateY = (x / rect.width - 0.5) * -8;
-        card.style.transform = `perspective(600px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
-      });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-      });
-    });
-
-    // Cinematic Section Reveal
-    const storySections = document.querySelectorAll('.story-section');
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
-    storySections.forEach(section => sectionObserver.observe(section));
-
-    // Parallax effect for hero
-    window.addEventListener('scroll', () => {
-      const heroVideo = document.querySelector('.hero-video');
-      if (heroVideo) {
-        const scroll = window.scrollY;
-        heroVideo.style.transform = `scale(1.1) translateY(${scroll * 0.15}px)`;
-        
-        // Cinematic scroll blur
-        const blur = Math.min(scroll / 200, 3);
-        heroVideo.style.filter = `blur(${blur}px) scale(1.1)`;
-        
-        // Scroll progress
-        const height = document.body.scrollHeight - window.innerHeight;
-        const progress = (scroll / height) * 100;
-        document.querySelector('.scroll-progress').style.width = progress + '%';
-      }
-    });
-  </script>
-
-  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -483,7 +508,7 @@
         "name": "Kas yra psichoterapija?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Psichoterapija yra pokalbio forma, kurioje specialistas padeda žmogui geriau suprasti save, savo emocijas ir santykius su kitais."
+          "text": "Psichoterapija – tai pokalbio forma, kurioje specialistas padeda žmogui suprasti save, savo emocijas ir santykius su kitais."
         }
       },
       {
@@ -491,7 +516,7 @@
         "name": "Ar psichoterapija padeda nuo nerimo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Taip, tyrimai rodo, kad psichoterapija yra vienas efektyviausių nerimo gydymo būdų."
+          "text": "Taip, psichoterapija yra vienas efektyviausių nerimo gydymo būdų."
         }
       },
       {
@@ -515,14 +540,274 @@
         "name": "Kiek kainuoja psichoterapija Vilniuje?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Kainos nustatomos pagal susitarimą, atsižvelgiant į Jūsų finansinę situaciją."
+          "text": "Kaina nustatoma individualiai, atsižvelgiant į jūsų situaciją."
         }
       }
     ]
   }
   </script>
 
-  <!-- Local Business NAP -->
+  <!-- SCRIPTS -->
+  <script src="particles.js"></script>
+  <script src="cursor-effects.js"></script>
+  <script src="smooth-scroll.js"></script>
+
+  <script>
+    // Mobile menu — full-screen overlay
+    const toggle = document.getElementById('mobileToggle');
+    const overlay = document.getElementById('navOverlay');
+    const closeBtn = document.getElementById('navOverlayClose');
+    const overlayLinks = document.querySelectorAll('.nav-overlay-link');
+
+    function openNav() {
+      overlay.classList.add('active');
+      toggle.classList.add('active');
+      toggle.setAttribute('aria-expanded', 'true');
+      // Animate links
+      gsap.fromTo('.nav-overlay-link',
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.6, stagger: 0.08, ease: 'power3.out', delay: 0.15 }
+      );
+    }
+
+    function closeNav() {
+      overlay.classList.remove('active');
+      toggle.classList.remove('active');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle.addEventListener('click', () => {
+      if (overlay.classList.contains('active')) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    });
+
+    closeBtn.addEventListener('click', closeNav);
+
+    overlayLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeNav();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target && window.lenis) {
+          window.lenis.scrollTo(target, { offset: -80, duration: 1.6 });
+        }
+      });
+    });
+
+    // FAQ
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isActive = item.classList.toggle('active');
+        btn.setAttribute('aria-expanded', isActive);
+        btn.querySelector('.faq-icon').textContent = isActive ? '×' : '+';
+      });
+    });
+
+    // Scroll progress + nav state
+    const scrollProgress = document.querySelector('.scroll-progress');
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      scrollProgress.style.width = (scrollTop / docHeight * 100) + '%';
+      nav.classList.toggle('is-scrolled', scrollTop > 80);
+    }, { passive: true });
+
+    // Video parallax
+    window.addEventListener('scroll', () => {
+      const video = document.querySelector('.hero-video');
+      if (!video) return;
+      const factor = Math.min(window.scrollY / window.innerHeight, 0.5);
+      video.style.transform = `scale(1.12) translateY(${factor * 50}px)`;
+      video.style.filter = `blur(${factor * 2}px)`;
+    }, { passive: true });
+
+    // Lazy play video
+    window.addEventListener('load', () => {
+      const video = document.getElementById('heroVideo');
+      if (video) video.play().catch(() => {});
+    });
+
+    // GSAP
+    const gsapScript = document.createElement('script');
+    gsapScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js';
+    gsapScript.onload = () => {
+      const stScript = document.createElement('script');
+      stScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js';
+      stScript.onload = () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero split text reveal
+        const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        heroTl
+          .to('.hero-badge', { y: 0, opacity: 1, duration: 0.8, delay: 0.5 })
+          .to('.hero h1 .line span', { y: 0, opacity: 1, duration: 1, stagger: 0.2 }, '-=0.4')
+          .to('.hero-sub', { y: 0, opacity: 1, duration: 0.9 }, '-=0.6')
+          .to('.hero-cta', { y: 0, opacity: 1, duration: 0.8 }, '-=0.5');
+
+        // Authority count-up
+        const countEl = document.querySelector('[data-count]');
+        if (countEl) {
+          ScrollTrigger.create({
+            trigger: '.authority',
+            start: 'top 85%',
+            once: true,
+            onEnter: () => {
+              gsap.to(countEl, {
+                duration: 2,
+                textContent: 20,
+                ease: 'power2.out',
+                snap: { textContent: 1 },
+                onUpdate: () => { countEl.textContent = countEl.textContent + '+'; }
+              });
+            }
+          });
+        }
+
+        // Authority stagger
+        gsap.from('.authority-item', {
+          scrollTrigger: { trigger: '.authority', start: 'top 85%' },
+          y: 30, opacity: 0, duration: 0.8, stagger: 0.2, ease: 'power3.out'
+        });
+
+        // Service cards
+        gsap.from('.service-card', {
+          scrollTrigger: { trigger: '.services-section', start: 'top 80%' },
+          y: 50, opacity: 0, duration: 0.9, stagger: 0.15, ease: 'power3.out'
+        });
+
+        // About
+        gsap.from('.about-text-content', {
+          scrollTrigger: { trigger: '.about-section', start: 'top 80%' },
+          x: -40, opacity: 0, duration: 1, ease: 'power3.out'
+        });
+        gsap.from('.about-image-wrapper', {
+          scrollTrigger: { trigger: '.about-section', start: 'top 75%' },
+          x: 40, opacity: 0, duration: 1, ease: 'power3.out'
+        });
+
+        // Testimonial cards
+        gsap.from('.testimonial-card', {
+          scrollTrigger: { trigger: '.testimonials-section', start: 'top 80%' },
+          y: 40, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out'
+        });
+
+        // When items
+        gsap.from('.when-item', {
+          scrollTrigger: { trigger: '.when-section', start: 'top 80%' },
+          y: 30, opacity: 0, duration: 0.7, stagger: 0.1, ease: 'power3.out'
+        });
+
+        // Principles
+        gsap.from('.principle-card', {
+          scrollTrigger: { trigger: '.philosophy-section', start: 'top 80%' },
+          y: 40, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out'
+        });
+
+        // Process: horizontal pin-scroll
+        const processPin = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.process-pin-container',
+            start: 'top top',
+            end: '+=20%',
+            pin: true,
+            scrub: 1,
+            anticipatePin: 1,
+            invalidateOnRefresh: true
+          }
+        });
+
+        processPin.to('.process-steps-wrapper', {
+          x: '-75%',
+          ease: 'none'
+        });
+
+        // Process progress bar
+        ScrollTrigger.create({
+          trigger: '.process-pin-container',
+          start: 'top top',
+          end: '+=20%',
+          scrub: 1,
+          onUpdate: (self) => {
+            const fill = document.getElementById('processProgressFill');
+            if (fill) fill.style.width = (self.progress * 100) + '%';
+          }
+        });
+
+        // FAQ
+        gsap.from('.faq-item', {
+          scrollTrigger: { trigger: '.faq-section', start: 'top 80%' },
+          y: 20, opacity: 0, duration: 0.6, stagger: 0.08, ease: 'power3.out'
+        });
+
+        // Contact button
+        gsap.from('.contact-section .btn', {
+          scrollTrigger: { trigger: '.contact-section', start: 'top 85%' },
+          y: 20, opacity: 0, duration: 0.8, ease: 'power3.out'
+        });
+
+        // Sync Lenis with ScrollTrigger
+        if (window.lenis) {
+          window.lenis.on('scroll', ScrollTrigger.update);
+        }
+      };
+      document.head.appendChild(stScript);
+    };
+    document.head.appendChild(gsapScript);
+
+    // Testimonial auto-carousel
+    (function() {
+      const track = document.getElementById('testimonialsTrack');
+      const dotsContainer = document.getElementById('testimonialDots');
+      if (!track || !dotsContainer) return;
+      const cards = track.querySelectorAll('.testimonial-card');
+      const total = cards.length;
+      let current = 0;
+      let interval;
+
+      // Create dots
+      for (let i = 0; i < total; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Atsiliepimas ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsContainer.appendChild(dot);
+      }
+
+      function goTo(index) {
+        current = index;
+        const offset = -current * (cards[0].offsetWidth + 24);
+        track.style.transform = 'translateX(' + offset + 'px)';
+        dotsContainer.querySelectorAll('.testimonial-dot').forEach((d, i) => {
+          d.classList.toggle('active', i === current);
+        });
+        resetInterval();
+      }
+
+      function next() {
+        goTo((current + 1) % total);
+      }
+
+      function resetInterval() {
+        clearInterval(interval);
+        interval = setInterval(next, 4000);
+      }
+
+      // Start
+      if (total > 1) {
+        interval = setInterval(next, 4000);
+        // Pause on hover
+        track.addEventListener('mouseenter', () => clearInterval(interval));
+        track.addEventListener('mouseleave', resetInterval);
+      }
+    })();
+  </script>
+
+  <!-- Local NAP -->
   <div class="local-nap" style="display:none;">
     <span>Psichologė Vilniuje</span>
     <span>Gedimino pr. 27</span>
